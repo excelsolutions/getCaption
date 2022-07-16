@@ -1,0 +1,9 @@
+.idea/
+__pycache__/
+get_Caption.iml
+inspectionProfiles/
+modules.xml
+scans/
+workspace.xml
+gitignore
+

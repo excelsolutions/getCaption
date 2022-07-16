@@ -25,6 +25,7 @@ def Change_Contrast(img_path, factor=2):
 def read_Text_From_Image(filename):
     img1 = np.array(Image.open(filename))
 # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
     text = pytesseract.image_to_string(img1)
     print(text)
     return text

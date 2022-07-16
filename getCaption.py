@@ -3,7 +3,10 @@ import tkinter as tk
 from PIL import Image, ImageTk
 from ocr_module import read_Text_From_Image
 from subprocess import check_call
+import wx
 
+TRAY_TOOLTIP = 'System Tray Demo'
+TRAY_ICON = 'icon.png'
 
 class MousePositionTracker(tk.Frame):
     """ Tkinter Canvas mouse position widget. """
@@ -168,6 +171,8 @@ class Application(tk.Frame):
         # Create mouse position tracker that uses the function.
         self.posn_tracker = MousePositionTracker(self.canvas)
         self.posn_tracker.autodraw(command=on_drag)  # Enable callbacks.
+
+
 
 
 if __name__ == '__main__':
